@@ -1,0 +1,37 @@
+[
+    {
+        "Name": "PaperMC",
+        "URL": "TDB",
+        "Destinations": [
+            "/var/games/minecraft/servers/creative/paperclip.jar",
+            "/var/opt/minecraft/crafty/crafty-4/servers/9cee508d-347d-4c3c-a6e4-163541f9eba3/paperclip.jar",
+            "/var/games/minecraft/servers/original/paperclip.jar",
+            "/var/games/minecraft/servers/survival/paperclip.jar",
+            "/var/games/minecraft/servers/survival2/paperclip.jar",
+            "/var/games/minecraft/servers/Factions/paperclip.jar",
+            "/var/games/minecraft/servers/smp/paperclip.jar",
+            "/var/games/minecraft/servers/smp2/paperclip.jar",
+            "/var/games/minecraft/servers/smp3/paperclip.jar",
+            "/var/games/minecraft/servers/smp4/paperclip.jar",
+            "/var/opt/minecraft/crafty/crafty-4/servers/f2dffe4e-5aed-47a0-80f6-4edbf7350a6b/paper-1.19.2.jar",
+            "/var/games/minecraft/servers/smp2old/paperclip.jar"
+        ]
+    },
+    {
+        "Name": "BungeeCord",
+        "URL": "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar",
+        "Destinations": [
+            "/var/games/minecraft/servers/bungeecord/BungeeCord.jar",
+            "/var/games/minecraft/servers/bungeecordAuth/BungeeCord.jar",
+            "/var/opt/minecraft/crafty/crafty-4/servers/58e6f207-7174-466a-8c3e-af31ac6068c7/BungeeCord.jar"
+        ]
+    },
+    {
+        "Name": "LuckPerms",
+        "URL": "TDB",
+        "Destinations": [
+            "/var/games/minecraft/servers/bungeecord/plugins/LuckPerms.jar",
+            "/var/games/minecraft/servers/bungeecordAuth/plugins/LuckPerms.jar"
+        ]
+    }
+]

@@ -1,0 +1,236 @@
+{
+    "external": false,
+    "file": {
+        "type": ".jar",
+        "size": 131.3,
+        "sizeUnit": "KB",
+        "url": "resources/lightapi-fork.48247/download?version=408663"
+    },
+    "description": "PGk+PGltZyBzcmM9Ii8vcHJveHkuc3BpZ290bWMub3JnLzlkZjU3YTc5MDU2NmE4OTZhMzU3OWRlY2I5Mzk3ZGE4OTVmYTg1OWU/dXJsPWh0dHBzJTNBJTJGJTJGcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSUyRkJlWWtlUllrdCUyRkxpZ2h0QVBJJTJGMy4wJTJGb3RoZXJzJTJGbGlnaHRfYXBpX2xvZ29fdmVyc2lvbl8zLnBuZyIgY2xhc3M9ImJiQ29kZUltYWdlIExiSW1hZ2UiIGFsdD0iW+KAi0lNR10iIGRhdGEtdXJsPSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQmVZa2VSWWt0L0xpZ2h0QVBJLzMuMC9vdGhlcnMvbGlnaHRfYXBpX2xvZ29fdmVyc2lvbl8zLnBuZyI+PC9pPgo8YnI+IAo8ZGl2IHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXIiPgogPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMThweCI+PGI+PHNwYW4gc3R5bGU9ImNvbG9yOiAjNTliMzAwIj5PZmZpY2lhbCBwbHVnaW4gcGFnZTogPC9zcGFuPjwvYj48YSBocmVmPSJodHRwczovL3d3dy5zcGlnb3RtYy5vcmcvcmVzb3VyY2VzL2xpZ2h0YXBpLjQ1MTAvIiBjbGFzcz0iaW50ZXJuYWxMaW5rIj48Yj5odHRwczovL3d3dy5zcGlnb3RtYy5vcmcvcmVzb3VyY2VzL2xpZ2h0YXBpLjQ1MTAvPC9iPjwvYT48YnI+IDxiPjxzcGFuIHN0eWxlPSJjb2xvcjogIzU5YjMwMCI+QXV0aG9yPC9zcGFuPjwvYj46IDxiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnNwaWdvdG1jLm9yZy9tZW1iZXJzLzI4MS8iIGNsYXNzPSJ1c2VybmFtZSIgZGF0YS11c2VyPSIyODEsIEV2aWxTcGF3biI+RXZpbFNwYXduPC9hPiAoPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL0JlWWtlUllrdCIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJleHRlcm5hbExpbmsiIHJlbD0ibm9mb2xsb3ciPmdpdGh1YjogQmVZa2VSWWt0PC9hPik8L2I+PC9zcGFuPgogPGJyPiAKIDxpPjxzcGFuIHN0eWxlPSJjb2xvcjogI2ZmMDAwMCI+PGI+VGhpcyBmb3JrIGlzIGZvciBjb250aW51YXRpb24gb2YgcGx1Z2luIExpZ2h0QVBJPC9iPjwvc3Bhbj48L2k+4oCLCjwvZGl2Pgo8YnI+IEhpc3Rvcnk6Cjxicj4gT3JpZ2luYWxseSB0aGlzIGZvcmsgd2FzIGFzIGEgdGVtcG9yYXJ5IHNvbHV0aW9uICh1bnRpbCB0aGUgYXV0aG9yIHJlbGVhc2VzIG5ldyB2ZXJzaW9uKS4gQnV0IHRoZW4sIHRoZSBhdXRob3IgcmV0aXJlZCBhbmQgb2ZmZXJlZCB0byBjb250aW51ZSB0byBzdXBwb3J0IGhpcyBwbHVnaW4uCjxicj4gCjxkaXYgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlciI+CiA8aT48c3BhbiBzdHlsZT0iY29sb3I6ICMwMDAwZmYiPiJUaGVyZSBpcyBub3RoaW5nIG1vcmUgcGVybWFuZW50IHRoYW4gdGVtcG9yYXJ5ISI8YnI+IDxpbWcgc3JjPSJzdHlsZXMvZGVmYXVsdC94ZW5mb3JvL2NsZWFyLnBuZyIgY2xhc3M9Im1jZVNtaWxpZVNwcml0ZSBtY2VTbWlsaWUxNSIgYWx0PSI6KSIgdGl0bGU9IlNtaWxlICAgIDopIj48L3NwYW4+PC9pPuKAiwo8L2Rpdj4KPGJyPiAKPGJyPiBBbGwgbXkgY2hhbmdlcyBpbiBzb3VyY2UgY29kZSBvbmUgY2FuIGZpbmQgaGVyZToKPGJyPiAKPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL1F2ZXNobi9MaWdodEFQSSIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJleHRlcm5hbExpbmsiIHJlbD0ibm9mb2xsb3ciPmh0dHBzOi8vZ2l0aHViLmNvbS9RdmVzaG4vTGlnaHRBUEk8L2E+Cjxicj4gCjxicj4gCjxzcGFuIHN0eWxlPSJjb2xvcjogIzAwMDAwMCI+RG93bmxvYWRzOiAxMDAwIDxpbWcgc3JjPSJzdHlsZXMvZGVmYXVsdC94ZW5mb3JvL2NsZWFyLnBuZyIgY2xhc3M9Im1jZVNtaWxpZVNwcml0ZSBtY2VTbWlsaWUyNSIgYWx0PSI6cm9sbGV5ZXM6IiB0aXRsZT0iUm9sbCBleWVzICAgIDpyb2xsZXllczoiPjxicj4gRG93bmxvYWRzOiAyMDAwIDxpbWcgc3JjPSJzdHlsZXMvZGVmYXVsdC94ZW5mb3JvL2NsZWFyLnBuZyIgY2xhc3M9Im1jZVNtaWxpZVNwcml0ZSBtY2VTbWlsaWUyNSIgYWx0PSI6cm9sbGV5ZXM6IiB0aXRsZT0iUm9sbCBleWVzICAgIDpyb2xsZXllczoiPjxicj4gRG93bmxvYWRzOiAzMDAwIDxpbWcgc3JjPSJzdHlsZXMvZGVmYXVsdC94ZW5mb3JvL2NsZWFyLnBuZyIgY2xhc3M9Im1jZVNtaWxpZVNwcml0ZSBtY2VTbWlsaWUyNSIgYWx0PSI6cm9sbGV5ZXM6IiB0aXRsZT0iUm9sbCBleWVzICAgIDpyb2xsZXllczoiPjxicj4gRG93bmxvYWRzOiA2MDAwIDxpbWcgc3JjPSJzdHlsZXMvZGVmYXVsdC94ZW5mb3JvL2NsZWFyLnBuZyIgY2xhc3M9Im1jZVNtaWxpZVNwcml0ZSBtY2VTbWlsaWUyMyIgYWx0PSI6ZWVrOiIgdGl0bGU9IkVlayEgICAgOmVlazoiPjxicj4gPC9zcGFuPgo8YnI+IAo8Yj48c3BhbiBzdHlsZT0iY29sb3I6ICNiMzAwMDAiPkF0dGVudGlvbiEgSSBhbSBnb2luZyB0byBtYWtlIEFQSSBkb2N1bWVudGF0aW9uLiBUaGVyZSB3aWxsIGJlIGRldGFpbGVkIGRlc2NyaXB0aW9uIGFuZCBleGFtcGxlcy4gSSBuZWVkIGhlbHAgaW4gcHJvb2ZyZWFkaW5nIHRoZSB0ZXh0IChJIGRvbid0IGtub3cgbXVjaCBFbmdsaXNoKS4gSSB3b3VsZCBiZSBncmF0ZWZ1bCBpZiBhbnlvbmUgd291bGQgaGVscCBtZSB3aXRoIHRoaXMuIFdyaXRlIGFib3V0IHRoaXMgaW4gUE0gb3IgaW4gdGhlIGRpc2N1c3Npb24gc2VjdGlvbi48L3NwYW4+PC9iPgo8YnI+IAo8YnI+IAo8ZGl2IGNsYXNzPSJUb2dnbGVUcmlnZ2VyQW5jaG9yIGJiQ29kZVNwb2lsZXJDb250YWluZXIiPiAKIDxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnV0dG9uIGJiQ29kZVNwb2lsZXJCdXR0b24gVG9nZ2xlVHJpZ2dlciBUb29sdGlwIEpzT25seSIgdGl0bGU9IkNsaWNrIHRvIHJldmVhbCBvciBoaWRlIHNwb2lsZXIiIGRhdGEtdGFyZ2V0PSI+IC5TcG9pbGVyVGFyZ2V0Ij48c3Bhbj5TcG9pbGVyOiA8c3BhbiBjbGFzcz0iU3BvaWxlclRpdGxlIj5UZW1wb3Jhcnkgc29sdXRpb24gZm9yIGRldmVsb3BlcnM8L3NwYW4+PC9zcGFuPjwvYnV0dG9uPiAKIDxkaXYgY2xhc3M9IlNwb2lsZXJUYXJnZXQgYmJDb2RlU3BvaWxlclRleHQiPiAKICA8ZGl2IGNsYXNzPSJiYkNvZGVCbG9jayBiYkNvZGVIdG1sIj4gCiAgIDxkaXYgY2xhc3M9InR5cGUiPgogICAgSFRNTDoKICAgPC9kaXY+IAogICA8ZGl2IGNsYXNzPSJjb2RlIj4KICAgICZuYnNwOyAmbmJzcDsgCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7cmVwb3NpdG9yaWVzJmd0Ozwvc3Bhbj4KICAgIDxicj4gJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7IC4uLgogICAgPGJyPiAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7cmVwb3NpdG9yeSZndDs8L3NwYW4+CiAgICA8YnI+ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7IAogICAgPHNwYW4gc3R5bGU9ImNvbG9yOiAjMDA5OTAwOyI+Jmx0O2lkJmd0Ozwvc3Bhbj5zb25hdHlwZQogICAgPHNwYW4gc3R5bGU9ImNvbG9yOiAjMDA5OTAwOyI+Jmx0OzxzcGFuIHN0eWxlPSJjb2xvcjogIzY2Y2M2NjsiPi88L3NwYW4+aWQmZ3Q7PC9zcGFuPgogICAgPGJyPiAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAKICAgIDxzcGFuIHN0eWxlPSJjb2xvcjogIzAwOTkwMDsiPiZsdDt1cmwmZ3Q7PC9zcGFuPmh0dHBzOi8vb3NzLnNvbmF0eXBlLm9yZy9jb250ZW50L2dyb3Vwcy9wdWJsaWMvCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7PHNwYW4gc3R5bGU9ImNvbG9yOiAjNjZjYzY2OyI+Lzwvc3Bhbj51cmwmZ3Q7PC9zcGFuPgogICAgPGJyPiAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7PHNwYW4gc3R5bGU9ImNvbG9yOiAjNjZjYzY2OyI+Lzwvc3Bhbj5yZXBvc2l0b3J5Jmd0Ozwvc3Bhbj4KICAgIDxicj4gJm5ic3A7ICZuYnNwOyAKICAgIDxzcGFuIHN0eWxlPSJjb2xvcjogIzAwOTkwMDsiPiZsdDs8c3BhbiBzdHlsZT0iY29sb3I6ICM2NmNjNjY7Ij4vPC9zcGFuPnJlcG9zaXRvcmllcyZndDs8L3NwYW4+CiAgICA8YnI+IAogICAgPGJyPiAmbmJzcDsgJm5ic3A7IAogICAgPHNwYW4gc3R5bGU9ImNvbG9yOiAjMDA5OTAwOyI+Jmx0O2RlcGVuZGVuY2llcyZndDs8L3NwYW4+CiAgICA8YnI+ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsuLi4KICAgIDxicj4gJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7IAogICAgPHNwYW4gc3R5bGU9ImNvbG9yOiAjMDA5OTAwOyI+Jmx0O2RlcGVuZGVuY3kmZ3Q7PC9zcGFuPgogICAgPGJyPiAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAKICAgIDxzcGFuIHN0eWxlPSJjb2xvcjogIzAwOTkwMDsiPiZsdDtncm91cElkJmd0Ozwvc3Bhbj5pby5naXRodWIucXZlc2huCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7PHNwYW4gc3R5bGU9ImNvbG9yOiAjNjZjYzY2OyI+Lzwvc3Bhbj5ncm91cElkJmd0Ozwvc3Bhbj4KICAgIDxicj4gJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7YXJ0aWZhY3RJZCZndDs8L3NwYW4+TGlnaHRBUEktZm9yawogICAgPHNwYW4gc3R5bGU9ImNvbG9yOiAjMDA5OTAwOyI+Jmx0OzxzcGFuIHN0eWxlPSJjb2xvcjogIzY2Y2M2NjsiPi88L3NwYW4+YXJ0aWZhY3RJZCZndDs8L3NwYW4+CiAgICA8YnI+ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7IAogICAgPHNwYW4gc3R5bGU9ImNvbG9yOiAjMDA5OTAwOyI+Jmx0O3ZlcnNpb24mZ3Q7PC9zcGFuPjMuNS4yLVNOQVBTSE9UCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7PHNwYW4gc3R5bGU9ImNvbG9yOiAjNjZjYzY2OyI+Lzwvc3Bhbj52ZXJzaW9uJmd0Ozwvc3Bhbj4KICAgIDxicj4gJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7IAogICAgPHNwYW4gc3R5bGU9ImNvbG9yOiAjMDA5OTAwOyI+Jmx0OzxzcGFuIHN0eWxlPSJjb2xvcjogIzY2Y2M2NjsiPi88L3NwYW4+ZGVwZW5kZW5jeSZndDs8L3NwYW4+CiAgICA8YnI+ICZuYnNwOyAmbmJzcDsgCiAgICA8c3BhbiBzdHlsZT0iY29sb3I6ICMwMDk5MDA7Ij4mbHQ7PHNwYW4gc3R5bGU9ImNvbG9yOiAjNjZjYzY2OyI+Lzwvc3Bhbj5kZXBlbmRlbmNpZXMmZ3Q7PC9zcGFuPgogICA8L2Rpdj4gCiAgPC9kaXY+CiA8L2Rpdj4gCjwvZGl2Pg==",
+    "likes": 64,
+    "testedVersions": [
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16",
+        "1.17"
+    ],
+    "versions": [
+        {
+            "id": 408663,
+            "uuid": "003b6495-051e-39c0-003a-8eb891d61573"
+        },
+        {
+            "id": 407236,
+            "uuid": "003b6495-051e-39bf-003a-8eb891d61252"
+        },
+        {
+            "id": 404901,
+            "uuid": "003b6495-051e-39be-003a-8eb891d5f249"
+        },
+        {
+            "id": 365275,
+            "uuid": "003b6495-051e-39ba-003a-8eb891c76c50"
+        },
+        {
+            "id": 351219,
+            "uuid": "003b6495-051e-39b9-003a-8eb891c6fbcf"
+        },
+        {
+            "id": 341671,
+            "uuid": "003b6495-051e-39b8-003a-8eb891c6cfaa"
+        },
+        {
+            "id": 328467,
+            "uuid": "003b6495-051e-39b7-003a-8eb891c680c1"
+        },
+        {
+            "id": 305658,
+            "uuid": "003b6495-051e-39b6-003a-8eb891b85694"
+        },
+        {
+            "id": 296330,
+            "uuid": "003b6495-051e-39b5-003a-8eb891b80233"
+        },
+        {
+            "id": 293916,
+            "uuid": "003b6495-051e-39b4-003a-8eb891b7dfd2"
+        },
+        {
+            "id": 292349,
+            "uuid": "003b6495-051e-39ac-003a-8eb891b7db85"
+        },
+        {
+            "id": 285950,
+            "uuid": "003b6495-051e-39ab-003a-8eb891b796c4"
+        },
+        {
+            "id": 285800,
+            "uuid": "003b6495-051e-39aa-003a-8eb891b7965f"
+        },
+        {
+            "id": 252503,
+            "uuid": "003b6495-051e-39a9-003a-8eb891a91322"
+        },
+        {
+            "id": 252487,
+            "uuid": "003b6495-051e-39a8-003a-8eb891a912bd"
+        },
+        {
+            "id": 237490,
+            "uuid": "003b6495-051e-39a7-003a-8eb891a87b90"
+        },
+        {
+            "id": 231266,
+            "uuid": "003b6495-051e-39a6-003a-8eb891a852ef"
+        },
+        {
+            "id": 201599,
+            "uuid": "003b6495-051e-9699-003a-8eb891a760be"
+        },
+        {
+            "id": 198137,
+            "uuid": "003b6495-051e-9698-003a-8eb89199d015"
+        },
+        {
+            "id": 188768,
+            "uuid": "003b6495-051f-4e8f-003a-8eb89199812c"
+        }
+    ],
+    "updates": [
+        {
+            "id": 412670
+        },
+        {
+            "id": 411256
+        },
+        {
+            "id": 408966
+        },
+        {
+            "id": 369306
+        },
+        {
+            "id": 355259
+        },
+        {
+            "id": 345708
+        },
+        {
+            "id": 332501
+        },
+        {
+            "id": 309559
+        },
+        {
+            "id": 300247
+        },
+        {
+            "id": 297826
+        }
+    ],
+    "reviews": [
+        {
+            "id": 462268
+        },
+        {
+            "id": 419760
+        },
+        {
+            "id": 417580
+        },
+        {
+            "id": 415480
+        },
+        {
+            "id": 415455
+        },
+        {
+            "id": 408532
+        },
+        {
+            "id": 387440
+        },
+        {
+            "id": 387434
+        },
+        {
+            "id": 383769
+        },
+        {
+            "id": 381429
+        },
+        {
+            "id": 364259
+        },
+        {
+            "id": 351702
+        },
+        {
+            "id": 346959
+        },
+        {
+            "id": 341252
+        },
+        {
+            "id": 331504
+        },
+        {
+            "id": 315387
+        },
+        {
+            "id": 315235
+        },
+        {
+            "id": 314871
+        },
+        {
+            "id": 312994
+        },
+        {
+            "id": 310933
+        }
+    ],
+    "links": {
+        "aHR0cHM6Ly9naXRodWIuY29tL1F2ZXNobi9MaWdodEFQSQ==": "https://github.com/Qveshn/LightAPI",
+        "RXZpbFNwYXdu": "https://www.spigotmc.org/members/281/",
+        "discussion": "threads/lightapi-fork.278321/",
+        "aHR0cHM6Ly93d3cuc3BpZ290bWMub3JnL3Jlc291cmNlcy9saWdodGFwaS40NTEwLw==": "https://www.spigotmc.org/resources/lightapi.4510/",
+        "Z2l0aHViOiBCZVlrZVJZa3Q=": "https://github.com/BeYkeRYkt"
+    },
+    "name": "LightAPI Fork",
+    "tag": "Plugin support continuation",
+    "version": {
+        "id": 408663,
+        "uuid": "003b6495-051e-39c0-003a-8eb891d61573"
+    },
+    "author": {
+        "id": 71761
+    },
+    "category": {
+        "id": 15
+    },
+    "rating": {
+        "count": 39,
+        "average": 4.7
+    },
+    "icon": {
+        "url": "",
+        "data": "",
+        "info": "",
+        "hash": ""
+    },
+    "releaseDate": 1507709580,
+    "updateDate": 1626050418,
+    "downloads": 51717,
+    "premium": false,
+    "price": 0,
+    "sourceCodeLink": "https://github.com/Qveshn/LightAPI",
+    "existenceStatus": 1,
+    "id": 48247
+}

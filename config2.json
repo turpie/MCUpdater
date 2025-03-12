@@ -1,0 +1,215 @@
+[
+    {
+        "Servers": [
+            {
+                "Name": "Main",
+                "Path": "C:\\Scripts\\MCUpdater\\testServers\\Main\\",
+                "Version": "1.21.3"
+            },
+            {
+                "Name": "Lobby",
+                "Path": "C:\\Scripts\\MCUpdater\\testServers\\Lobby\\",
+                "Version": "1.21.3"
+            },
+            {
+                "Name": "DevServer",
+                "Path": "C:\\Scripts\\MCUpdater\\testServers\\Dev\\",
+                "Version": "1.22.3"
+            }
+        ],
+        "Plugins": [
+            {
+                "Name": "Luck Perms",
+                "Source": "Modrinth",
+                "identifier": "luckperms",
+                "DestinationServers": ["DevServer","Main","Lobby"]
+            },
+            {
+                "Name": "VaultUnlocked",
+                "Source": "Modrinth",
+                "identifier": "vaultunlocked",
+                "DestinationServers": ["DevServer","Main"]
+            },
+            {
+                "Name": "CoreProtect",
+                "Source": "Modrinth",
+                "identifier": "coreprotect",
+                "DestinationServers": ["DevServer","Main","Lobby"]
+            },
+            {
+                "Name": "InventoryRollbackPlus",
+                "Source": "Modrinth",
+                "identifier": "inventoryrollbackplus",
+                "DestinationServers": ["DevServer","Main"]
+            },
+            {
+                "Name": "Denizen",
+                "Comment": "Better to get from https://ci.citizensnpcs.co/view/all/job/Denizen/lastSuccessfulBuild/",
+                "Source": "Custom",
+                "identifier": "21039",
+                "DestinationServers": ["DevServer","Main","Lobby"]
+            },
+            {
+                "Name": "Citizens",
+                "Comment": "May need to get from https://ci.citizensnpcs.co/job/Citizens2/lastSuccessfulBuild/",
+                "Source": "Custom",
+                "identifier": "13811",
+                "DestinationServers": ["DevServer","Main","Lobby"]
+            },
+            {
+                "Name": "AuraSkills",
+                "Source": "Modrinth",
+                "identifier": "auraskills",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "KeepChunks",
+                "Source": "Modrinth",
+                "identifier": "keepchunks",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "InteractionVisualizer",
+                "Source": "Modrinth",
+                "identifier": "interactionvisualizer",
+                "DependsOn": "LightAPI Fork",
+                "Comment": "DependsOn LightAPI Fork",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "LightAPI Fork",
+                "Comment": "Needed for InteractionVisualizer",
+                "IgnoreVersion": true,
+                "Source": "Spigot",
+                "identifier": "48247",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "PlaceholderAPI",
+                "Source": "Spigot",
+                "identifier": "6245",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Sentinel",
+                "Source": "Spigot",
+                "identifier": "22017",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "OpenInv",
+                "Source": "GitHub",
+                "identifier": "https://github.com/lishid/OpenInv/releases/latest",
+                "DestinationServers": "DevServer"
+            },
+            {
+
+                "Name": "Harbor",
+                "Source": "Spigot",
+                "identifier": "60088",
+                "IgnoreVersion": true,
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Plan",
+                "Source": "Modrinth",
+                "identifier": "plan",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Sweet Dreams",
+                "Source": "Modrinth",
+                "identifier": "sweet-dreams",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Advanced Portals",
+                "Source": "Modrinth",
+                "identifier": "advanced-portals",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "CropProtect",
+                "Source": "Modrinth",
+                "identifier": "cropprotect",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "ViaVersionStatus",
+                "Source": "Modrinth",
+                "identifier": "viaversionstatus",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "ViaVersion",
+                "Source": "Modrinth",
+                "identifier": "viaversion",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "ViaBackwards",
+                "Source": "Modrinth",
+                "identifier": "viabackwards",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "BlueMap",
+                "Source": "Modrinth",
+                "identifier": "bluemap",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Dynmap",
+                "Source": "Modrinth",
+                "identifier": "dynmap",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "WorldEdit",
+                "Source": "Modrinth",
+                "identifier": "worldedit",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "WorldEdit Selection Viewer",
+                "Source": "Modrinth",
+                "identifier": "worldedit-selection-viewer",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "WorldGuard",
+                "Source": "Modrinth",
+                "identifier": "worldguard",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Tree Capitator",
+                "Source": "Modrinth",
+                "identifier": "tree-capitator",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "xTEMPLATExTEMPLATExTEMPLATExTEMPLATEx",
+                "Source": "Modrinth",
+                "identifier": "xTEMPLATExTEMPLATExTEMPLATExTEMPLATEx",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "xTEMPLATExTEMPLATExTEMPLATExTEMPLATEx",
+                "Source": "Modrinth",
+                "identifier": "xTEMPLATExTEMPLATExTEMPLATExTEMPLATEx",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "ProtocolLib",
+                "Source": "Spigot",
+                "AltSource": "Custom",
+                "identifier": "luckperms",
+                "DestinationServers": "Main",
+                "Comment": "May need project dev build for latest Minecraft versions",
+                "AltURL" : "https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/build/libs/ProtocolLib.jar"
+            }
+        ]
+    }
+]
+
