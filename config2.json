@@ -69,6 +69,32 @@
                 "DestinationServers": "DevServer"
             },
             {
+                "Name": "Terra",
+                "Source": "Modrinth",
+                "identifier": "terra",
+                "DestinationServers": "TheREAL-DEV-SERVER",
+                "Comment": "https://terra.polydev.org/install/bukkit-server-world-creation.html"
+            },
+            {
+                "Name": "Terra LootinAddon",
+                "Source": "Spigot",
+                "identifier": "90868",
+                "DestinationServers": "TheREAL-DEV-SERVER",
+                "Comment": "Place the addon in the plugins/Terra/addons folder. https://www.spigotmc.org/resources/terra-lootinaddon.90868/?ref=spiget"
+            },
+            {
+                "Name": "RetainXP",
+                "Source": "Modrinth",
+                "identifier": "retainxp",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Veinminer",
+                "Source": "Modrinth",
+                "identifier": "veinminer",
+                "DestinationServers": "DevServer"
+            },
+            {
                 "Name": "InteractionVisualizer",
                 "Source": "Modrinth",
                 "identifier": "interactionvisualizer",
@@ -91,9 +117,33 @@
                 "DestinationServers": "DevServer"
             },
             {
+                "Name": "Dwellin",
+                "Source": "Spigot",
+                "identifier": "103402",
+                "DestinationServers": "DevServer"
+            },
+            {
                 "Name": "Sentinel",
                 "Source": "Spigot",
                 "identifier": "22017",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "NotTooExpensive",
+                "Source": "Spigot",
+                "identifier": "119293",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "BetterFood",
+                "Source": "Spigot",
+                "identifier": "50469",
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "Lootin",
+                "Source": "Spigot",
+                "identifier": "90453",
                 "DestinationServers": "DevServer"
             },
             {
@@ -108,6 +158,12 @@
                 "Source": "Spigot",
                 "identifier": "60088",
                 "IgnoreVersion": true,
+                "DestinationServers": "DevServer"
+            },
+            {
+                "Name": "BedHelther",
+                "Source": "Modrinth",
+                "identifier": "bedhelther",
                 "DestinationServers": "DevServer"
             },
             {
