@@ -5,12 +5,58 @@
 
 $config = Get-Content -Raw -Path "config2.json" | ConvertFrom-Json
 $logFilePath = (Join-Path -Path $PSScriptRoot -ChildPath "Errors.log")
-$UserAgent = "pturpie's Minecraft server updater"
+$UserAgent = "pturpie's MC server updater"
+
+function Get-Plugin {
+    param (
+        [string]$name,
+        [string]$url,
+        [array]$testedVersions,
+        [array]$destinationServers,
+        [bool]$IgnoreVersion
+    )
+
+    $destinationPath = [IO.Path]::Combine($PSScriptRoot, 'Cache', $name, $latestVersion.version_number)
+    if (-not (Test-Path -Path $destinationPath)) {
+        New-Item -ItemType Directory -Path $destinationPath -Force | Out-Null
+        Write-Output ("* Created directory: " + $destinationPath)
+    }
+    $destinationFile = (Join-Path $destinationPath -ChildPath ($name + ".jar"))
+    if (-not (Test-Path -Path $destinationFile)) {
+        Write-Output (" + Downloading: " + $name)
+        DownloadFile -Uri $url -OutFile $destinationFile -UserAgent $UserAgent
+    }
+    else {
+        Write-Output (" - plugin version already exists: " + $name)
+    }
+
+    Write-Output (" - Copying $name to servers")
+    foreach ($server in $destinationServers) {
+        $serverConfig = $config.Servers | Where-Object { $_.Name -eq $server }
+        if ($serverConfig) {
+            if (($testedVersions -contains $serverConfig.Version) -or ($IgnoreVersion -eq $true)) {
+                Write-Output ("   - Copying to server: " + $server)
+                Copy-Item -Path $destinationFile -Destination (Join-Path -Path $serverConfig.Path -ChildPath "plugins" -AdditionalChildPath ($name + ".jar"))
+            }
+            else {
+                Write-Output (" ! Plugin is NOT compatible with $server server version: " + $serverConfig.Version)
+            }
+        }
+        else {
+            Write-Output ("*** Server configuration not found for: " + $server)
+        }
+    }
+}
 
 $config.Plugins | ForEach-Object {
     $currentPlugin = $_
-    if ($currentPlugin.Name -eq "xTEMPLATExTEMPLATExTEMPLATExTEMPLATEx" ) {
-        #skip this object and continue with next item in the Foreach loop
+
+    if ($currentPlugin.IgnoreVersion) {
+        $IgnoreVersion = $true
+    }else{
+        $IgnoreVersion = $false
+    }
+    if ($currentPlugin.Name -eq "xTEMPLATExTEMPLATExTEMPLATExTEMPLATEx") {
         break
     }
     Write-Output "--------------------------------------------------------------------------------------"
@@ -24,43 +70,8 @@ $config.Plugins | ForEach-Object {
 
                 $version = Invoke-RestMethod -Uri ("https://api.modrinth.com/v2/project/" + $currentPlugin.identifier + "/version")
                 $latestVersion = $version | Where-Object { $_.loaders -contains "paper" } | Sort-Object -Property version_number -Descending | Select-Object -First 1
-                $latestVersion.files[0].url
-                $destinationPath = [IO.Path]::Combine($PSScriptRoot, 'Cache', $currentPlugin.Name, $latestVersion.version_number)
-                # does $destinationPath exist? check path and create it if need be.
-                if (-not (Test-Path -Path $destinationPath)) {
-                    New-Item -ItemType Directory -Path $destinationPath -Force | Out-Null
-                    Write-Output ("* Created directory: " + $destinationPath)
-                }
-                else {
-                    #Write-Output ("* Directory already exists: " + $destinationPath)
-                }
-                $destinationFile = (Join-Path $destinationPath -ChildPath ($currentPlugin.Name + ".jar"))
-                if (-not (Test-Path -Path $destinationFile)) {
-                    Write-Output (" + Downloading: " + $currentPlugin.Name)
-                    DownloadFile -Uri $latestVersion.files[0].url -OutFile $destinationFile -UserAgent $UserAgent
-                }
-                else {
-                    Write-Output (" - plugin version already exists: " + $currentPlugin.Name)
-                }
 
-                # loop through $currentPlugin.DestinationServers and check the versions in $config.Servers
-                Write-Output (" - Copying $($currentPlugin.Name) to servers")
-                foreach ($server in $currentPlugin.DestinationServers) {
-                    $serverConfig = $config.Servers | Where-Object { $_.Name -eq $server }
-                    if ($serverConfig) {
-                        if ($pluginData.game_versions -contains $serverConfig.Version) {
-                            Write-Output ("   - Copying to server: " + $server)
-                            Copy-Item -Path $destinationFile -Destination (Join-Path -Path $serverConfig.Path -ChildPath "plugins" -AdditionalChildPath ($currentPlugin.Name + ".jar"))
-                        }
-                        else {
-                            Write-Output (" ! Plugin is NOT compatible with $server server version: " + $serverConfig.Version)
-                        }
-                    }
-                    else {
-                        Write-Output ("*** Server configuration not found for: " + $server)
-                    }
-                }
-
+                Download-Plugin -name $currentPlugin.Name -url $latestVersion.files[0].url -testedVersions $pluginData.game_versions -destinationServers $currentPlugin.DestinationServers -IgnoreVersion $IgnoreVersion
             }
             catch {
                 Write-Error ("Failed to retrieve plugin data for: " + $currentPlugin.Name + ". Error: " + $_.Exception.Message)
@@ -77,44 +88,7 @@ $config.Plugins | ForEach-Object {
                 $version = Invoke-RestMethod -Uri "https://api.spiget.org/v2/resources/$($currentPlugin.identifier)/versions?size=99&sort=%2B"
                 $latestVersion = $version | Sort-Object releasedate | Select-Object -Last 1
 
-                $destinationPath = [IO.Path]::Combine($PSScriptRoot, 'Cache', $currentPlugin.Name, $latestVersion.name)
-                # does $destinationPath exist? check path and create it if need be.
-                if (-not (Test-Path -Path $destinationPath)) {
-                    New-Item -ItemType Directory -Path $destinationPath -Force | Out-Null
-                    Write-Output ("* Created directory: " + $destinationPath)
-                }
-                else {
-                    #Write-Output ("* Directory already exists: " + $destinationPath)
-                }
-                $destinationFile = (Join-Path $destinationPath -ChildPath ($currentPlugin.Name + ".jar"))
-                if (-not (Test-Path -Path $destinationFile)) {
-                    Write-Output (" + Downloading: " + $currentPlugin.Name)
-                    DownloadFile -Uri "http://api.spiget.org/v2/resources/$($currentPlugin.identifier)/download/" -OutFile $destinationFile -UserAgent $UserAgent
-                }
-                else {
-                    Write-Output (" - plugin version already exists: " + $currentPlugin.Name)
-                }
-
-                # loop through $currentPlugin.DestinationServers and check the versions in $config.Servers
-                Write-Output (" - Copying $($currentPlugin.Name) to servers")
-                foreach ($server in $currentPlugin.DestinationServers) {
-                    $serverConfig = $config.Servers | Where-Object { $_.Name -eq $server }
-                    if ($serverConfig) {
-                        if (($pluginData.testedVersions -contains $serverConfig.Version) -or ($currentPlugin.IgnoreVersion -eq $true)) {
-                            Write-Output ("   - Copying to server: " + $server)
-                            Copy-Item -Path $destinationFile -Destination (Join-Path -Path $serverConfig.Path -ChildPath "plugins" -AdditionalChildPath ($currentPlugin.Name + ".jar"))
-                        }
-                        else {
-                            Write-Output (" ! Plugin is NOT compatible with $server server version: " + $serverConfig.Version)
-                            $serverConfig
-                            $currentPlugin |Format-List
-                        }
-                    }
-                    else {
-                        Write-Output ("*** Server configuration not found for: " + $server)
-                    }
-                }
-
+                Download-Plugin -name $currentPlugin.Name -url "http://api.spiget.org/v2/resources/$($currentPlugin.identifier)/download/" -testedVersions $pluginData.testedVersions -destinationServers $currentPlugin.DestinationServers -IgnoreVersion $IgnoreVersion
             }
             catch {
                 Write-Error ("Failed to retrieve plugin data for: " + $currentPlugin.Name + ". Error: " + $_.Exception.Message)
@@ -122,13 +96,13 @@ $config.Plugins | ForEach-Object {
                 Add-Content -Path $logFilePath -Value ("Failed to retrieve plugin data for: " + $currentPlugin.Name + ". Error: " + $_.Exception.Message)
             }
         }
-        "GitHub"{
-
+        "GitHub" {
+            # Handle GitHub source
         }
         Default {
             Write-Output "#######################################################"
             Write-Output "  TODO: write handler for $($currentPlugin.Source)"
+            Write-Output "#######################################################"
         }
     }
-    #break
 }
